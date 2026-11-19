@@ -1,4 +1,4 @@
-export const categories = ["전공코어", "전공심화", "교양"] as const
+export const categories = ["전공코어", "전공심화", "교양/DS"] as const
 export type Category = (typeof categories)[number]
 export const days = ["월", "화", "수", "목", "금"]
 export const cohort = "2024학번"
@@ -28,46 +28,46 @@ export type Course = {
 
 export const courses: Course[] = [
   {
-    id: "SWE1001",
-    name: "프로그래밍기초",
+    id: "DASF004",
+    name: "프로그래밍기초와실습",
     term: 0,
-    category: "전공코어",
+    category: "교양/DS",
     completed: true,
   },
   {
-    id: "GED1001",
-    name: "대학글쓰기",
+    id: "GEDW002",
+    name: "학술적글쓰기",
     term: 0,
-    category: "교양",
+    category: "교양/DS",
     completed: true,
   },
   {
-    id: "MAT1001",
-    name: "미적분학",
+    id: "GEDB001",
+    name: "미분적분학1",
     term: 0,
-    category: "교양",
+    category: "교양/DS",
     completed: true,
   },
   {
-    id: "SWE1002",
-    name: "객체지향프로그래밍",
+    id: "DASF003",
+    name: "공학컴퓨터프로그래밍",
     term: 1,
-    category: "전공코어",
+    category: "교양/DS",
     completed: true,
-    requires: ["SWE1001"],
+    requires: ["DASF004"],
   },
   {
-    id: "SWE2011",
+    id: "GEDB007",
     name: "이산수학",
     term: 1,
-    category: "전공코어",
+    category: "교양/DS",
     completed: true,
   },
   {
     id: "GED1002",
     name: "글로벌영어",
     term: 1,
-    category: "교양",
+    category: "교양/DS",
     completed: true,
   },
   {
@@ -76,7 +76,7 @@ export const courses: Course[] = [
     term: 2,
     category: "전공코어",
     completed: true,
-    requires: ["SWE1002"],
+    requires: ["DASF003", "DASF004"],
   },
   {
     id: "SWE3005",
@@ -89,7 +89,7 @@ export const courses: Course[] = [
     id: "MTH2002",
     name: "정수론",
     term: 2,
-    category: "교양",
+    category: "교양/DS",
     completed: true,
   },
   {
@@ -155,7 +155,7 @@ export const courses: Course[] = [
     id: "GEDC010",
     name: "성균논어",
     term: 4,
-    category: "교양",
+    category: "교양/DS",
     time: [4, 11],
   },
   {
@@ -197,7 +197,7 @@ export const courses: Course[] = [
     id: "GEDN055",
     name: "지속가능성을위한수학적모델링",
     term: 6,
-    category: "교양"
+    category: "교양/DS",
   },
   {
     id: "SWE3050",
@@ -217,7 +217,7 @@ export const courses: Course[] = [
 export const requirements = [
   { label: "전공코어", earned: 18, goal: 24 },
   { label: "전공심화", earned: 27, goal: 36 },
-  { label: "교양", earned: 33, goal: 30 },
+  { label: "교양/DS", earned: 33, goal: 30 },
   { label: "선택", earned: 9, goal: 10 },
 ]
 export const earnedCredits = requirements.reduce(
