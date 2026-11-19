@@ -78,7 +78,7 @@ test("Graduation and What-if use the same 87/99/96 result when Machine Learning 
   )
   assert.equal(
     graduationChecks(graduation.eligible).rows.find(
-      ({ label }) => label === "전공선택"
+      ({ label }) => label === "전공심화"
     ).projected,
     30
   )
