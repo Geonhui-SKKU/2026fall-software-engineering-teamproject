@@ -80,6 +80,13 @@ export const courses: Course[] = [
   },
   {
     id: "SWE3005",
+    name: "컴퓨터네트웍개론",
+    term: 2,
+    category: "전공코어",
+    completed: true,
+  },
+  {
+    id: "SWE3022",
     name: "컴퓨터구조개론",
     term: 2,
     category: "전공코어",
@@ -336,22 +343,16 @@ export const bootcamp = {
 
 export const programs = [
   {
-    name: "인공지능 마이크로디그리",
+    name: "미래차SDV 마이크로디그리",
     label: "마이크로디그리",
-    ids: ["SWE2015", "SWE3001", "SWE3024", "SWE3031"],
+    ids: ["SWE2015", "SWE3005", "SWE3022", "SWE3004"],
     description:
-      "인공지능의 기초부터 기계학습까지 이어지는 소프트웨어 특화 과정입니다.",
+      "미래차 부트캠프에서 운영하는 Software-Defined Vehicle 마이크로디그리입니다.",
   },
   {
     name: "데이터사이언스 트랙",
     label: "전공트랙",
     ids: ["MAT2002", "SWE3004", "SWE3031"],
     description: "데이터 처리와 분석에 필요한 기초 역량을 쌓는 과정입니다.",
-  },
-  {
-    name: "클라우드·인프라 트랙",
-    label: "전공트랙",
-    ids: ["SWE3011", "SWE3021", "SWE4006"],
-    description: "운영체제, 네트워크, 클라우드 시스템을 학습합니다.",
   },
 ]
