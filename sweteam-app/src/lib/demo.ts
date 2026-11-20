@@ -215,10 +215,10 @@ export const courses: Course[] = [
 ]
 
 export const requirements = [
-  { label: "전공코어", earned: 18, goal: 24 },
-  { label: "전공심화", earned: 27, goal: 36 },
-  { label: "교양/DS", earned: 33, goal: 30 },
-  { label: "선택", earned: 9, goal: 10 },
+  { label: "전공코어", earned: 18, goal: 21 },
+  { label: "전공심화", earned: 27, goal: 33 },
+  { label: "교양/DS", earned: 33, goal: 49 },
+  { label: "선택", earned: 9, goal: 0 },
 ]
 export const earnedCredits = requirements.reduce(
   (sum, item) => sum + item.earned,
@@ -234,7 +234,7 @@ export const academicRecords = [
       id: course.id,
       name: course.name,
       period: terms[course.term],
-      grade: "A0",
+      grade: "A+",
       status: "completed" as const,
     })),
   ...enrolledIds.map((id) => ({
@@ -289,7 +289,7 @@ export const events = [
     id: "midterm",
     month: "04월",
     day: "19",
-    name: "1학기 중간고사",
+    name: "2027학년도 1학기 중간고사",
     date: "2027.04.19 – 04.23",
     type: "학사일정",
   },
