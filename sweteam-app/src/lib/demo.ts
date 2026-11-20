@@ -323,7 +323,7 @@ export const preassignmentNotices = [
     department: "소프트웨어학과",
     eligibility: "소프트웨어학과 원전공생 중 해당 과목 최초 수강자",
     eligibilityKnown: true,
-    period: "2027.02.11 09:00 – 02.20 17:00 (KST)",
+    period: null,
     method: "학과 공지사항 구글폼 접속 후 신청",
   },
 ] as const

@@ -20,7 +20,7 @@ import {
 } from "@/lib/demo"
 
 const archivedReference =
-  "https://cse.skku.edu/eng_cse/notice.do?mode=view&articleNo=178684"
+  "https://cse.skku.edu/cse/notice.do?mode=view&articleNo=222220"
 
 export function Preassignment({
   reminders,
@@ -90,7 +90,7 @@ export function Preassignment({
                       target="_blank"
                       rel="noreferrer"
                     >
-                      학과 공식 공지 형식 예시 (2024년)
+                      학과 공식 공지 형식 예시 (2026-2학기 강화학습개론)
                     </a>
                   </dd>
                 </div>
